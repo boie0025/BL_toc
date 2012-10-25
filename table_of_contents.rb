@@ -29,6 +29,7 @@ while eject != 1
     exit2 = gets.chomp.downcase
     while eject2 != 1
       if exit2 == 'y'
+        num = num + 1
         eject2 = 1
       elsif exit2 == 'n'
         eject2 = 1
