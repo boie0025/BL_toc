@@ -27,11 +27,12 @@ while eject != 1
     puts 'Does Chapter ' + num.to_s + ':' + ' ' + chapter + ' look right?'
     puts 'Y or N'
     exit2 = gets.chomp.downcase
+    num = num + 1
     while eject2 != 1
       if exit2 == 'y'
-        num = num + 1
         eject2 = 1
       elsif exit2 == 'n'
+        num = num - 1
         eject2 = 1
       elsif exit2 != 'y' && exit2 != 'n'
         puts 'Please enter Y or N'
