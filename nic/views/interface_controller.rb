@@ -21,7 +21,7 @@ class InterfaceController
   
   def self.confirm_chapter(chapter_object)    
     # Using double quotes allows the #{} construct, which interpolates the inner code.  Here I call
-    # name() on the chapter_object object, and it's output replaces #{...}
+    # name() on the chapter_object object, and its output replaces #{...}
     # I return the true/false given by ask_a_yes_or_no_question.  The last call with output
     # in a function is the return value of that function.  so a return in front of this call
     # is implicit.  I didn't do this on the last method, but I could remove the "return" on 
