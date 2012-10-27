@@ -31,4 +31,11 @@ class InterfaceController
     self.ask_a_yes_or_no_question("Does Chapter #{chapter_object.name} look right?")
   end
   
+  def self.display_toc(toc)
+    puts "Table of Contents:"
+    toc.each do |chapter|
+      puts "Chapter ##{chapter.number}, Name: #{chapter.name}"
+    end
+  end
+  
 end
