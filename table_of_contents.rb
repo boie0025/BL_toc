@@ -32,7 +32,7 @@ while eject != 1
       if exit2 == 'y'
         eject2 = 1
       elsif exit2 == 'n'
-        num = num - 1
+        num = num - 2
         eject2 = 1
       elsif exit2 != 'y' && exit2 != 'n'
         puts 'Please enter Y or N'
