@@ -1,8 +1,6 @@
 require './models/chapter.rb'
 require './views/interface_controller.rb'
 
-eject = false #terminate program?
-eject2 = 0    #terminate loop verifying chapter name
 chapters = []
 
 #Ask if we want to start
