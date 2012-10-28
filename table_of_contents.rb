@@ -37,7 +37,6 @@ while eject != 1
             chapter = 'Chapter ' + num.to_s + ':' + ' ' + chapter
             chapters.push chapter
             num = num + 1
-            #chapter_loop = 1
             eject2 = eject2 + 1
           elsif exit2 == 'n'
             puts 'What would you like to call Chapter ' + num.to_s + '?'
