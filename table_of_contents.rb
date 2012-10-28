@@ -5,7 +5,6 @@ num = 1       #this is the number of the first chapter
 chapters = [] #this is the chapter array
 pages = []    #this is the page array
 eject = 0     #terminate program?
-eject2 = 0    #terminate loop verifying chapter name
 
 puts 'Would you like to make a Table of Contents?'
 puts 'Y or N'
@@ -24,16 +23,16 @@ while eject != 1
     if chapter == ''
       break
     end
-    puts 'Does Chapter ' + num.to_s + ':' + ' ' + chapter + ' look right?'
-    puts 'Y or N'
-    exit2 = gets.chomp.downcase
-    num = num + 1
+    eject2 = 0
     while eject2 != 1
+      puts 'Does Chapter ' + num.to_s + ':' + ' ' + chapter + ' look right?'
+      puts 'Y or N'
+      exit2 = gets.chomp.downcase
       if exit2 == 'y'
-        eject2 = 1
+        num = num + 1
+        eject2 = eject2 + 1
       elsif exit2 == 'n'
-        num = num - 2
-        eject2 = 1
+        eject2 = eject2 + 1
       elsif exit2 != 'y' && exit2 != 'n'
         puts 'Please enter Y or N'
         exit2 = gets.chomp.downcase
